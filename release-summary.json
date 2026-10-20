@@ -1,35 +1,17 @@
 {
-  "version": "1.125.0",
+  "version": "2.0.1",
   "changes": {
     "en-US": [
-      "Support SVG image uploads, previews, and sharing.",
-      "Improve AI poster template selection, speed up template thumbnails, and allow retrying failed previews.",
-      "Fix consecutive mobile shares being combined into one note and Android image export failures for filenames containing brackets.",
-      "Fix keyboard shortcut switching between source and rich-text editor modes. Thanks to @sivdead (#623).",
-      "Fix extra brackets and long links beside clipped Substack images and improve GitHub repository metadata capture. Update the clipper extension and re-clip Substack articles to apply the fix. Thanks to @sivdead (#618).",
-      "Fix desktop access to AI models on the server local network by routing models restricted from direct access through the instance server. Thanks to @sivdead (#624).",
-      "Keep note context menus within the window boundaries.",
-      "Fix Markdown line breaks in untouched initial welcome notes."
+      "Restore server fallback when Web model requests fail because of browser network or CORS restrictions; desktop and native mobile clients continue to connect directly.",
+      "Show clearer AI companion errors for model timeouts and service failures instead of describing them as rejected requests."
     ],
     "zh-CN": [
-      "支持 SVG 图片上传、预览和分享。",
-      "改进 AI 海报模板选择，加快模板缩略图加载，并支持加载失败后重试。",
-      "修复移动端连续分享混入同一笔记的问题，以及 Android 图片导出文件名含方括号时的失败。",
-      "修复编辑器源码与富文本模式的快捷键往返切换。感谢 @sivdead（#623）。",
-      "修复 Substack 剪藏图片旁多余括号和长链接，以及 GitHub 仓库信息提取；Substack 修复需更新剪藏扩展后重新剪藏。感谢 @sivdead（#618）。",
-      "修复桌面端无法调用服务器局域网 AI 模型的问题，受直连限制的模型改由实例服务器调用。感谢 @sivdead（#624）。",
-      "修复笔记右键菜单超出窗口边界的问题。",
-      "修复未编辑的初始欢迎笔记中 Markdown 换行显示异常。"
+      "修复 Web 端因浏览器网络或 CORS 限制导致模型请求失败时的后端兜底；桌面端及原生移动端继续直连模型服务。",
+      "优化 AI 伙伴错误提示，准确区分模型超时、服务异常与请求被拒绝。"
     ],
     "ja": [
-      "SVG 画像のアップロード、プレビュー、共有に対応しました。",
-      "AI によるポスターテンプレート選択を改善し、サムネイルの表示を高速化しました。読み込み失敗時に再試行できます。",
-      "モバイルで連続共有した内容が同じノートに混在する問題と、Android で角括弧を含む画像ファイル名の書き出し失敗を修正しました。",
-      "ソースとリッチテキスト間のショートカット切り替えを修正しました。@sivdead さんに感謝します（#623）。",
-      "Substack のクリップ画像横に余分な括弧と長いリンクが出る問題と、GitHub リポジトリ情報の取得を修正しました。Substack の修正には拡張機能の更新と再クリップが必要です。@sivdead さんに感謝します（#618）。",
-      "デスクトップからサーバーのローカルネットワーク上の AI モデルを利用できない問題を修正し、直接アクセスが制限されるモデルはインスタンスサーバー経由で呼び出します。@sivdead さんに感謝します（#624）。",
-      "ノートのコンテキストメニューがウィンドウの外にはみ出す問題を修正しました。",
-      "未編集の初期ウェルカムノートで Markdown の改行が正しく表示されない問題を修正しました。"
+      "Web のモデルリクエストがブラウザーのネットワークまたは CORS 制限で失敗した際のサーバーフォールバックを修復しました。デスクトップとネイティブモバイルは引き続き直接接続します。",
+      "AI コンパニオンのエラー表示を改善し、モデルのタイムアウト、サービス障害、リクエスト拒否を区別します。"
     ]
   }
 }
